@@ -120,25 +120,6 @@
             text-decoration: underline;
         }
     </style>
-</head>
-<body>
-    <div class="container">
-     <center> <img src="777.jpg"alt= "Test Image"<"width = "150" height = "100" </center>
-        <h1> اهلا .انا بشار من العراق /الموصل /</h1>
-        <p>مطور ويب ومهتم بتصميم واجهات المستخدم وتجربة المستخدم. أحب بناء مواقع بسيطة وجميلة مثل هذه! 😊</p>
-  <p>,,وحاليا انا طالب في جامعة الموصل /كلية علوم الحاسوب والرياضيات وهذا اول مشروع لي! 😊</p>
-        <div class="social-links">
-            <a href="https://twitter.com" target="_blank">تويتر</a>
-            <a href="https://github.com" target="_blank">جيت هب</a>
-            <a href="mailto:basharbajlany@gmail.com">كوكل</a>
-<a href="https://openai.com/chatgpt/overview/">جات جي بي تي </a>
-<a href="https://www.youtube.com/">يوتيوب </a>
-<a href="https://uomosul.edu.iq/computerscience/%d9%82%d8%b3%d9%85-%d8%b9%d9%84%d9%88%d9%85-%d8%a7%d9%84%d8%ad%d8%a7%d8%b3%d9%88%d8%a8-2/">قسم علوم الحاسوب </a>
-        </div>
-    </div>
-</body>
-</html>
 
-    </div>
 </body>
 </html>
