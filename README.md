@@ -203,7 +203,7 @@
       <li><a href="#about">عني</a></li>
       <li><a href="#skills">مهاراتي</a></li>
       <li><a href="#projects">مشاريعي</a></li>
-      <li><a href="#contact">تواصل</a></li>
+      <li><a href="#contact"> 07701820206 تواصل</a></li>
     </ul>
   </nav>
 
