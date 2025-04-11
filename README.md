@@ -4,92 +4,134 @@
 
 <head>
 
-  <title>نموذج شراء المنتج</title>
+<title>تسجيل حساب جديد</title>
+
+<meta charset=”UTF-8″>
+
+<meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+
+<style>
+
+body {
+
+font-family: Arial, sans-serif;
+
+margin: 0;
+
+padding: 0;
+
+background-color: #f2f2f2;
+
+}
+
+form {
+
+background-color: #fff;
+
+margin: 50px auto;
+
+padding: 20px;
+
+max-width: 500px;
+
+border-radius: 10px;
+
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+h1 {
+
+font-size: 36px;
+
+margin-bottom: 20px;
+
+text-align: center;
+
+color: #333;
+
+}
+
+input[type=”text”], input[type=”email”], input[type=”password”] {
+
+display: block;
+
+width: 100%;
+
+margin-bottom: 20px;
+
+padding: 10px;
+
+border: none;
+
+border-radius: 5px;
+
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+font-size: 16px;
+
+color: #333;
+
+font-family: Arial, sans-serif;
+
+}
+
+input[type=”submit”] {
+
+display: block;
+
+width: 100%;
+
+padding: 10px;
+
+border: none;
+
+border-radius: 5px;
+
+background-color: #333;
+
+color: #fff;
+
+font-size: 18px;
+
+cursor: pointer;
+
+transition: background-color 0.3s ease-in-out;
+
+}
+
+input[type=”submit”]:hover {
+
+background-color: #555;
+
+}
+
+</style>
 
 </head>
 
 <body>
 
-  <form>
+<form>
 
-    <label for="fname">الاسم الأول:</label><br>
+<h1>تسجيل حساب جديد</h1>
 
-    <input type="text" id="fname" name="fname"><br>
+<label for=”name”>الاسم:</label>
 
-    <label for="lname">اسم العائلة:</label><br>
+<input type=”text” id=”name” name=”name” required>
 
-    <input type="text" id="lname" name="lname"><br><br>
+<label for=”email”>البريد الإلكتروني:</label>
 
-    <label for="address">العنوان:</label><br>
+<input type=”email” id=”email” name=”email” required>
 
-    <input type="text" id="address" name="address"><br><br>
+<label for=”password”>كلمة المرور:</label>
 
-    <label for="state">اختر المحافظة:</label><br>
+<input type=”password” id=”password” name=”password” required>
 
-    <select name="state" id="state">
+<input type=”submit” value=”إنشاء الحساب”>
 
-      <option value="">--اختر المحافظة--</option>
-
-      <option value="1">البصرة1</option>
-
-      <option value="2">بغداد2</option>
-
-      <option value="3">موصل السماقية 3</option>
-
-    </select><br><br>
-
-    <label for="quantity">الكمية:</label><br>
-
-    <input type="number" id="quantity" name="quantity" min="1"><br><br>
-
-    <label for="message">رسالة:</label><br>
-
-    <textarea id="message" name="message"></textarea><br><br>
-
-    <input type="submit" value="إرسال">
-
-  </form>
-
-  <p>التكلفة الإجمالية: <span id="total"></span></p>
-
-  <script>
-
-    // سعر المنتج
-    var price = 10;
-
-    // سعر التوصيل لكل محافظة
-    var deliveryPrices = {
-
-      "1": 5,
-
-      "2": 7,
-
-      "3": 10
-
-    };
-
-    // حساب التكلفة الإجمالية
-    function calculateTotal() {
-
-      var quantity = document.getElementById("quantity").value;
-
-      var state = document.getElementById("state").value;
-
-      var deliveryPrice = deliveryPrices[state];
-
-      var total = (price * quantity) + deliveryPrice;
-
-      document.getElementById("total").textContent = total;
-
-    }
-
-    // إضافة مستمع للحدث على حقول الإدخال
-    document.getElementById("quantity").addEventListener("input", calculateTotal);
-
-    document.getElementById("state").addEventListener("change", calculateTotal);
-
-  </script>
+</form>
 
 </body>
 
-<
+</html>
