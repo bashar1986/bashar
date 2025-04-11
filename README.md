@@ -1,137 +1,71 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="ar" dir="rtl">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحتي الشخصية</title>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            background: linear-gradient(to right, #f6f8fd, #e0eafc);
+            color: #333;
+            text-align: center;
+            padding: 30px;
+        }
 
-<title>تسجيل حساب جديد</title>
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
 
-<meta charset=”UTF-8″>
+        img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid #3f51b5;
+            margin-bottom: 20px;
+        }
 
-<meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+        h1 {
+            margin-bottom: 10px;
+            color: #3f51b5;
+        }
 
-<style>
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
 
-body {
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            color: #3f51b5;
+            text-decoration: none;
+            font-size: 20px;
+        }
 
-font-family: Arial, sans-serif;
-
-margin: 0;
-
-padding: 0;
-
-background-color: #f2f2f2;
-
-}
-
-form {
-
-background-color: #fff;
-
-margin: 50px auto;
-
-padding: 20px;
-
-max-width: 500px;
-
-border-radius: 10px;
-
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
-}
-
-h1 {
-
-font-size: 36px;
-
-margin-bottom: 20px;
-
-text-align: center;
-
-color: #333;
-
-}
-
-input[type=”text”], input[type=”email”], input[type=”password”] {
-
-display: block;
-
-width: 100%;
-
-margin-bottom: 20px;
-
-padding: 10px;
-
-border: none;
-
-border-radius: 5px;
-
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-
-font-size: 16px;
-
-color: #333;
-
-font-family: Arial, sans-serif;
-
-}
-
-input[type=”submit”] {
-
-display: block;
-
-width: 100%;
-
-padding: 10px;
-
-border: none;
-
-border-radius: 5px;
-
-background-color: #333;
-
-color: #fff;
-
-font-size: 18px;
-
-cursor: pointer;
-
-transition: background-color 0.3s ease-in-out;
-
-}
-
-input[type=”submit”]:hover {
-
-background-color: #555;
-
-}
-
-</style>
-
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
 <body>
-
-<form>
-
-<h1>تسجيل حساب جديد</h1>
-
-<label for=”name”>الاسم:</label>
-
-<input type=”text” id=”name” name=”name” required>
-
-<label for=”email”>البريد الإلكتروني:</label>
-
-<input type=”email” id=”email” name=”email” required>
-
-<label for=”password”>كلمة المرور:</label>
-
-<input type=”password” id=”password” name=”password” required>
-
-<input type=”submit” value=”إنشاء الحساب”>
-
-</form>
-
+    <div class="container">
+     <center> <img src = "777.jpg" alt = "Test Image"width = "150" height = "100"" border = "3"</center>
+        <h1> اهلا .انا بشار من العراق /الموصل / السماقية</h1>
+        <p>مطور ويب ومهتم بتصميم واجهات المستخدم وتجربة المستخدم. أحب بناء مواقع بسيطة وجميلة مثل هذه! 😊</p>
+  <p>,,وحاليا انا طالب في جامعة الموصل /كلية علوم الحاسوب والرياضيات وهذا اول مشروع لي! 😊</p>
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank">تويتر</a>
+            <a href="https://github.com" target="_blank">جيت هب</a>
+            <a href="mailto:basharbajlany@gmail.com">بريدي</a>
+<a href="https://openai.com/chatgpt/overview/">جات جي بي تي </a>
+<a href="https://www.youtube.com/">يوتيوب </a>
+        </div>
+    </div>
 </body>
-
 </html>
