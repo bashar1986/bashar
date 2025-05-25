@@ -1,288 +1,265 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>بشار جارالله</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Cairo', sans-serif;
-      background: #f2f2f2;
-      color: #333;
-    }
-
-    /* Navbar */
-    nav {
-      background-color: #1e1e2f;
-      color: white;
-      padding: 15px 30px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav h1 {
-      font-size: 1.6em;
-      color: #00c9a7;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #00c9a7;
-    }
-
-    /* Header */
-    header {
-      background: linear-gradient(to left, #00c9a7, #005b96);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    header img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 5px solid white;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-
-    header h2 {
-      font-size: 2.2em;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.1em;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    section h3 {
-      text-align: center;
-      color: #005b96;
-      margin-bottom: 40px;
-      font-size: 2em;
-    }
-
-    /* About */
-    .about p {
-      font-size: 1.1em;
-      line-height: 2;
-      text-align: center;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    /* Skills */
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .skill-box {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      width: 180px;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      transition: 0.3s;
-    }
-
-    .skill-box:hover {
-      transform: scale(1.05);
-    }
-
-    .skill-box i {
-      font-size: 2em;
-      color: #00c9a7;
-      margin-bottom: 10px;
-    }
-
-    /* Projects */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .project {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    .project img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-
-    .project h4 {
-      margin-bottom: 5px;
-    }
-
-    /* Contact */
-    .contact {
-      text-align: center;
-    }
-
-    .contact a {
-      display: inline-block;
-      margin: 10px;
-      font-size: 1.5em;
-      color: #005b96;
-      text-decoration: none;
-    }
-
-    .contact a:hover {
-      color: #00c9a7;
-    }
-
-    /* Footer */
-    footer {
-      background: #1e1e2f;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>نظام إدارة الميناء /اعداد بشار جارالله </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f2ff;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .nav {
+            background-color: #0066cc;
+            overflow: hidden;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .nav a:hover {
+            background-color: #0052a3;
+        }
+        .container {
+            margin: 20px;
+        }
+        .section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: right;
+        }
+        th {
+            background-color: #0066cc;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
+<body style="color: #333;">
 
-<body>
 
-  <!-- Navbar -->
-  <nav>
-    <h1>بشار جارالله</h1>
-    <ul>
-      <li><a href="#about">عني</a></li>
-      <li><a href="#skills">مهاراتي</a></li>
-      <li><a href="#projects">مشاريعي</a></li>
-      <li><a href="#contact"> 07701820206 تواصل</a></li>
-    </ul>
-  </nav>
 
-  <!-- Header -->
-  <header>
-    <img src="https://via.placeholder.com/150" alt="صورة بشار" />
-    <h2>بشار جارالله</h2>
-    <p>مطور ويب ومصمم واجهات - عاشق للتقنية والإبداع</p>
-  </header>
-
-  <!-- About -->
-  <section id="about" class="about">
-    <h3>من أنا؟</h3>
-    <p>
-      أنا بشار، شغوف بعالم البرمجة وتصميم الويب. أعمل على بناء مواقع عصرية وجذابة باستخدام أحدث التقنيات. أحب التحديات واستكشاف كل جديد في عالم التقنية.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <h3>مهاراتي</h3>
-    <div class="skills">
-      <div class="skill-box">
-        <i class="fab fa-html5"></i>
-        <p>HTML5</p>
-      </div>
-      <div class="skill-box">
-        <i class="fab fa-css3-alt"></i>
-        <p>CSS3</p>
-      </div>
-      <div class="skill-box">
-        <i class="fab fa-js-square"></i>
-        <p>JavaScript</p>
-      </div>
-      <div class="skill-box">
-        <i class="fab fa-react"></i>
-        <p>React</p>
-      </div>
-      <div class="skill-box">
-        <i class="fab fa-node-js"></i>
-        <p>Node.js</p>
-      </div>
-      <div class="skill-box">
-        <i class="fab fa-github"></i>
-        <p>GitHub</p>
-      </div>
+    <div class="header">
+        <h1>نظام إدارة الميناء  </h1>
+        <h2>نظام متكامل لإدارة عمليات الميناء البحري</h2>
+        <h3> اعداد الطالب بشار جارالله / قسم علوم الحاسوب</h3>
     </div>
-  </section>
+<div class="container">
+     <center> <img src="WhatsApp-Image-2023-12-24-at-11.03.30-PM.jpeg"alt= "Test Image"<"width = "750" height = "450""3> </center>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h3>مشاريعي</h3>
-    <div class="projects">
-      <div class="project">
-        <img src="https://via.placeholder.com/300x200" alt="مشروع 1" />
-        <h4>موقع شخصي</h4>
-        <p>تصميم وتطوير موقع شخصي بتقنية HTML/CSS/JS.</p>
-      </div>
-      <div class="project">
-        <img src="https://via.placeholder.com/300x200" alt="مشروع 2" />
-        <h4>لوحة تحكم</h4>
-        <p>بناء لوحة تحكم ديناميكية باستخدام React.</p>
-      </div>
-      <div class="project">
-        <img src="https://via.placeholder.com/300x200" alt="مشروع 3" />
-        <h4>تطبيق إدارة مهام</h4>
-        <p>تطبيق ويب بسيط لإدارة المهام باستخدام Node.js وMongoDB.</p>
-      </div>
+    <div class="nav">
+        <a href="#ships">إدارة السفن</a>
+        <a href="#containers">إدارة الحاويات</a>
+        <a href="#employees">إدارة الموظفين</a>
+        <a href="#reports">التقارير</a>
     </div>
-  </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h3>تواصل معي</h3>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="mailto:you@example.com"><i class="fas fa-envelope"></i></a>
-  </section>
+    <div class="container">
+        <div id="ships" class="section">
+            <center><h2 style="color: #004080;">إدارة السفن</h2></center>
+            <hr>
+            
+            <p><b>السفن الحالية في الميناء:</b></p>
+            
+            <table>
+                <tr>
+                    <th>اسم السفينة</th>
+                    <th>نوع السفينة</th>
+                    <th>الحمولة (طن)</th>
+                    <th>تاريخ الوصول</th>
+                    <th>الحالة</th>
+                </tr>
+                <tr>
+                    <td>سفينة الخليج</td>
+                    <td>ناقلة بضائع</td>
+                    <td>50,000</td>
+                    <td>2023-05-6</td>
+                    <td><u>قيد التفريغ</u></td>
+                </tr>
+                <tr>
+                    <td>بحر العرب</td>
+                    <td>حاويات</td>
+                    <td>75,000</td>
+                    <td>2025-05-1</td>
+                    <td><b>تم التفريغ</b></td>
+                </tr>
+                <tr>
+                    <td>النجم الساطع</td>
+                    <td>ناقلة نفط</td>
+                    <td>120,000</td>
+                    <td>2025-05-10</td>
+                    <td>في الانتظار</td>
+                </tr>
+            </table>
+            
+            <p style="margin-top: 20px;"><small>تاريخ آخر تحديث: 2023-05-20</small></p>
+        </div>
 
-  <!-- Footer -->
-  <footer>
+        <div id="containers" class="section">
+            <center><h2 style="color: #004080;">إدارة الحاويات</h2></center>
+            <hr>
+            
+            <p><big>إحصائيات الحاويات:</big></p>
+            
+            <table bgcolor="#f9f9f9">
+                <tr>
+                    <td colspan="3"><center><b>إحصائية الحاويات</b></center></td>
+                </tr>
+                <tr>
+                    <td>إجمالي الحاويات</td>
+                    <td>1,250</td>
+                    <td>حاوية</td>
+                </tr>
+                <tr>
+                    <td>الحاويات الفارغة</td>
+                    <td>320</td>
+                    <td>حاوية</td>
+                </tr>
+                <tr>
+                    <td>الحاويات المحملة</td>
+                    <td>930</td>
+                    <td>حاوية</td>
+                </tr>
+            </table>
+            
+            <p>أنواع الحاويات:</p>
+            <ul>
+                <li>حاويات 20 قدم</li>
+                <li>حاويات 40 قدم</li>
+                <li>حاويات مبردة</li>
+                <li>حاويات ذات حجم خاص</li>
+            </ul>
+        </div>
+
+        <div id="employees" class="section">
+            <center><h2 style="color: #004080;">إدارة الموظفين</h2></center>
+            <hr>
+            
+            <p><u>طاقم العمل الحالي:</u></p>
+            
+            <table>
+                <tr>
+                    <th>الاسم</th>
+                    <th>الوظيفة</th>
+                    <th>المناوبة</th>
+                    <th>تاريخ التعيين</th>
+                </tr>
+                <tr>
+                    <td>أحمد ناطق</td>
+                    <td>مشغل رافعة شوكية<sup></sup></td>
+                    <td>صباحية</td>
+                    <td>2020-03-15</td>
+                </tr>
+                <tr>
+                    <td>حسين محمود</td>
+                    <td>مشرف ميناء</td>
+                    <td>مسائية</td>
+                    <td>2018-06-22</td>
+                </tr>
+                <tr>
+                    <td>محمود ماهر</td>
+                    <td>موظف استقبال</td>
+                    <td>صباحية</td>
+                    <td>2021-01-10</td>
+                </tr>
+            </table>
+            
+            
+        </div>
+
+        <div id="reports" class="section">
+            <center><h2 style="color: #004080;">التقارير</h2></center>
+            <hr>
+            
+            <p><b>تقارير الميناء الشهرية:</b></p>
+            
+            <table>
+                <tr>
+                    <th>الشهر</th>
+                    <th>عدد السفن</th>
+                    <th>عدد الحاويات</th>
+                    <th>الإيرادات (دولار)</th>
+                </tr>
+                <tr>
+                    <td>يناير 2025</td>
+                    <td>45</td>
+                    <td>1,200</td>
+                    <td>2,450,000</td>
+                </tr>
+                <tr>
+                    <td>فبراير 2025</td>
+                    <td>52</td>
+                    <td>1,350</td>
+                    <td>2,800,000</td>
+                </tr>
+                <tr>
+                    <td>مايو 2025</td>
+                    <td>38</td>
+                    <td>980</td>
+                    <td>2,100,000</td>
+                </tr>
+            </table>
+<!-- روابط المواقع -->
+  <table width="90%" align="center" bgcolor="#ffffff" cellpadding="20" border="1" bordercolor="#b3e5fc">
+    <tr>
+      <td>
+        <a name="sites"></a>
+        <h2><font face="Tahoma" color="#006064">روابط مواقع إلكترونية مشهورة</font></h2>
+        <ul>
+  
+          
+ <li><a href="https://www.gcpi.gov.iq/" target="_blank">الموقع الالكتروني للشركة العامة لموانئ العراق </a></li>
+    <li><a href="https://uomosul.edu.iq/computerscience/" target="_blank">الموقع الالكتروني لكلية علوم الحاسوب والرياضيات  </a></li>
+<li><a href="https://www.w3schools.com" target="_blank"><font face="Arial">موقع W3Schools لتعلم HTML</font></a></li>
+          <li><a href="https://www.github.com" target="_blank"><font face="Arial">موقع GitHub للمشاريع البرمجية</font></a></li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+            
+            <p style="margin-top: 20px;">
+                <sub>ملاحظة: جميع البيانات تعكس الحالة حتى نهاية الشهر</sub>
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>نظام إدارة الميناء البحري &copy; 2025 | تم التطوير بواسطة المبرمج بشار جارالله   </p>
+    </div>
+</body>
+</html>
